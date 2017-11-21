@@ -1,0 +1,201 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <font color="white">
+        <style>
+
+            /*css untuk class container*/
+            div.container{
+                width:"100%";
+                background-color:aliceblue;
+                background-image: url(1.jpg), url(paper.gif);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            }
+            /*css untuk class header dan footer*/
+            header, footer{
+                clear:left;
+                background-color:teal;
+                padding-top: 0px;
+                padding-bottom:10px;
+                padding-top:7px;
+                padding-left:10px;
+                margin-right: 100px;
+                margin-left: 100px;
+                color:white;
+                text-align: center;
+            }
+            /*css untuk navigasi*/
+            nav{
+                background-color:grey;
+                display: block;
+                height: 40px;
+                padding-top:0px;
+                padding-bottom:10px;
+                padding-left:10px;
+                margin-right: 100px;
+                margin-left: 100px;
+                background-color: #5d5d5d;
+    
+
+            }
+            nav ul{
+                padding: 0;
+                margin: 0;
+                padding-top:10px;
+                padding-bottom:10px;
+                padding-left:10px;
+                margin-right: 100px;
+                margin-left: 100px;
+            }
+            nav ul li{
+                display: block;
+                width: 120px;
+                height: 40px;
+                background-color:grey;
+                float: left;
+                text-align: center;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+
+            }
+            /*css untuk article*/
+            article{
+                width: 45%;
+                float: left;
+                padding-left: 100px;
+                padding-right: 100px;
+
+            }
+            /* css untuk bagian samping*/
+            aside{
+                overflow: hidden;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-right: 100px;
+                margin-left:  100px;
+                padding-left:10px;
+                padding-top:0px;
+                padding-bottom:0px;
+            }
+            /* style untuk setiap element*/
+            label, input, select, textarea, button{
+                display: block;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-right: 100px;
+                margin-left:  100px;
+                padding-left:10px;
+                padding-top:0px;
+                padding-bottom:0px;
+                
+    
+    
+            }
+            input, select, textarea, button{
+                border:1px solid #fcfcfc;
+
+                font-size: 14px;
+                padding: 7px;
+                width: 45%;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-right: 100px;
+                margin-left:  100px;
+                padding-left:10px;
+                padding-top:0px;
+                padding-bottom:0px;
+            }
+            button{
+                background-color:grey;
+                color: white;
+                margin-top:10px;
+                margin-bottom: 10px;
+                margin-right: 100px;
+                margin-left:  100px;
+                padding-left:10px;
+                padding-top:0px;
+                padding-bottom:0px;
+            }
+            p{
+                text-align: justify;
+            }
+            p.copyright{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+    <!-- element terluar dari sebuah susunan layout -->
+    <div class="container" id="container">
+        <!-- untuk header sebuah website -->
+        <center>
+        <header>
+            <h2>Teknik Informatika</h2>
+            <h3<h3>Universitas Muhammadiyah Banjarmasin</h3>
+        </header>
+        </center>
+        
+        <!-- navigasi website -->
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa fa-home"></i> Beranda</a></li>
+                <li><a href="#"><i class="fa fa-file-text"></i> Profil</a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i> Kontak</a></li>
+            </ul>
+        </nav>
+        <!-- artikel website -->
+        <article>
+            <center>
+                <h3>REGISTRASI</h3>
+            </center>
+            <form method="" action="">
+                <legend>
+                <label>BIODATA DIRI</label>>
+                <label>Nama Lengkap</label>
+                <input name="nama" id="nama" class="" value="" type="text" placeholder="Silahkan Masukan Nama Lengkap Anda" required>
+                <label>Laki Laki </label>
+                <input name="jk" id="jk" class="" value="L" type="radio">
+                <label>Perempuan </label>
+                <input name="jk" id="jk" class="" value="P" type="radio">
+                <label>Email</label>
+                <input name="email" id="email" class="" value="" type="email" placeholder="Silahkan Masukan Email Anda" required>
+                <label>Password</label>
+                <input name="password" id="password" class="" value="" type="password" placeholder="Silahkan Masukan Password" required>
+                <label>Upload Dokumen</label>
+                <input name="jk" id="jk" class="" value="" type="file">
+                <label>Domisili</label>
+                <select name="domisili" id="domisili">
+                    <option value="banjarmasin">BANJARMASIN</option>
+                    <option value="banjarbaru">BANJARBARU</option>
+                    <option value="banjar">BANJAR</option>
+                </select>
+                <label>Alamat</label>
+                <textarea name="alamat" id="alamat"></textarea>
+                <label>Apakah data yang anda input sudah benar ? </label>
+                <input name="setuju" id="setuju" class="" value="true" type="checkbox">
+                <button name="simpan" id="simpan" class="" type="submit">SIMPAN</button>
+            </legend>>
+            </form>
+        </article>
+        <!-- sisi website -->
+        <aside>
+        <center>
+            <h3>Silahkan Login</h3>
+        </center>
+            <form>
+                <label>Username</label>
+                <input id="username" value="" type="text" placeholder="Username">
+                <label>Password</label>
+                <input id="password" value="" type="password" placeholder="Password">
+                <button><i class="fa fa-sign-in"></i> Klik Login</button>
+            </form>
+        </aside>
+        <!-- footer website -->
+        <footer><p class="copyright">InformatikaUMBJM</p></footer>
+    </div>
+    </body>
+</html> 
